@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="stylesheet" href="./Assets/tablas.css">
+</head>
+<body>
+<h1>Tablas</h1> <!--Las tablas son un conjunto estructurado de datos compuesto por filas y columnas.-->
+<caption> Tabla de nombres</caption> <!--representa un título descriptivo en una tabla.-->
+
+<table> <!--crea el elemento de tabla.-->
+     <tr> <!--representa una fila.-->
+         <th>Nombre</th> <!--representa las celdas de encabezado.-->
+         <th>Apellido</th>
+         </tr>
+     <tr>
+        <td>Mariana</td> <!--representa las celdas de datos.-->
+        <td>Valladolid</td>
+         </tr>
+     <tr>
+        <td>Jose</td>
+        <td>Garcia</td>
+         </tr>
+     </table>
+
+     <table>
+         <p>Tabla simple con encabezado</p><!--Representa un parrafo de descrpcion-->
+         <thead><!--esta etiqueta agrupa los elementos de la cabecera en la tabla.-->
+         <tr>
+         <th colspan="2">Encabezado de tablas</th><!--permite expandir las celdas de datos o de encabezados al número de columnas que deseemos que ocupe-->
+         </tr>
+         </thead>
+         <tbody><!--esta etiqueta agrupa los elementos de contenido en la tabla.-->
+         <tr>
+         <td>El cuerpo de la tabla</td>
+         <td>con 2 columnas</td>
+         </tr>
+         </tbody>
+        </table>
+        <br>
+        
+        <br>
+        <caption> Tabla de nombres</caption> <!--representa un título descriptivo en una tabla.-->
+        
+        <p>Tabla con thead, tfoot, y tbody</p>
+        <table>
+         <thead>
+         <tr>
+         <th>Header content 1</th>
+         <th>Header content 2</th>
+         </tr>
+         </thead>
+         <tbody>
+         <tr>
+         <td>Body content 1</td>
+         <td>Body content 2</td>
+         </tr>
+         </tbody>
+         <tfoot><!--esta etiqueta agrupa los elementos de pie en la tabla.-->
+         <tr>
+         <td>Footer content 1</td>
+         <td>Footer content 2</td>
+         </tr>
+         </tfoot>
+        </table>
+        
+
+        <table>
+                <p>Tabla simple con encabezado</p><!--Representa un parrafo de descrpcion-->
+                <thead><!--esta etiqueta agrupa los elementos de la cabecera en la tabla.-->
+                    <tr>
+                        <th colspan="2">Encabezado de tablas</th><!--permite expandir las celdas de datos o de encabezados al número de columnas que deseemos que ocupe-->
+                    </tr>
+                </thead>
+                <tbody><!--esta etiqueta agrupa los elementos de contenido en la tabla.-->
+                    <tr>
+                        <td>El cuerpo de la tabla</td>
+                        <td>con 2 columnas</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            
+            <br>
+            <caption> Tabla de nombres</caption> <!--representa un título descriptivo en una tabla.-->
+            
+            <p>Tabla con thead, tfoot, y tbody</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Header content 1</th>
+                  <th>Header content 2</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Body content 1</td>
+                  <td>Body content 2</td>
+                </tr>
+              </tbody>
+              <tfoot><!--esta etiqueta agrupa los elementos de pie en la tabla.-->
+                <tr>
+                  <td>Footer content 1</td>
+                  <td>Footer content 2</td>
+                </tr>
+              </tfoot>
+            </table>
+
+            <br>
+<hr>
+<h1>Vinculos de Anclaje</h1>
+<!--
+  De forma predeterminada, la página vinculada se mostrará en la ventana actual del navegador. Para cambiar esto, debe especificar otro destino para el vínculo.
+
+El targetatributo especifica dónde abrir el documento vinculado.
+
+El targetatributo puede tener uno de los siguientes valores:
+
+_self- Por defecto. Abre el documento en la misma ventana/pestaña en la que se hizo clic
+_blank- Abre el documento en una nueva ventana o pestaña
+_parent- Abre el documento en el marco principal
+_top- Abre el documento en el cuerpo completo de la ventana.
+-->
+<br>
+
+<div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+    <!--Agregar una identificación con un nombre de anclaje-->
+    <a id="nombre-anclaje"> Aquí el nombre de la sección a la que quieres brincar </a>
+    </div><br>
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+    <!--Un anclaje en una cabecera-->
+    <h4 id="nombre-anclaje">Nombre de la sección</h4>
+    </div> <br>
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+    <!--Anclaje en una imagen-->
+    <img id="image-G" src="./Assets/Huron.jpg" alt="Will" title="Super Will" width="400" height="300" />
+    </div>
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+    <!--anclaje en un párrafo-->
+    <p id="nombre-anclaje">Nombre del párrafo</p>
+    </div> <br>
+    <div align="center" style="border: 03px ridge rgb(8, 8, 8);">
+    <!--Crear un hipervínculo utilizando el identificador del objetivo del vínculo, precedido por #-->
+    <a href="#nombre-anclaje">Brincar a la parte de la página con “nombre-anclaje” id </a>
+    </div> <br>
+    <br>
+    <br>
+    <hr>
+
+    <h2>Ingredientes para pastel de chocolate c:</h2>
+    <p>Para conocer los ingredientes de pastel de chocolate da click <a href="./tablas2.html" target="_blank">aquí</a></p>
+
+    <hr>
+    <h2> Ingredientes par un agua de limon</h2>
+    <p>Para conocer los ingredientes de agua de limon da click <a href="./tablas3.html" target="_blank">aquí</a></p>
+            
+        
+    
+</body>
+</html>
+
+
+<!--
+
+    cellspacing: Nos permite establecer el espacio entre las celdas.
+    cellpadding: Nos permite establecer el espacio entre los bordes de las celdas.
+    border: Nos permite establecer el borde de la tabla, el valor por defecto es 1, pero puede ser cualquier otro valor.
+    bgcolor: Nos permite establecer el color de fondo de la tabla.
+    colspan: Nos permite establecer la cantidad de columnas que ocupara la celda. *similar al combinar celdas de excel
+    rowspan: Nos permite establecer la cantidad de filas que ocupara la celda. *similar al combinar celdas de excel
+
+
+-->
